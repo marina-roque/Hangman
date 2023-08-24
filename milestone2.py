@@ -7,8 +7,8 @@ print(word)
 
 while True: 
   guess = input ("Type one letter: ")
-  if len(guess) == 1 and guess.isalpha() and guess in word:
+  if len(guess) == 1 and guess.isalpha():
     print("Good guess")
     break
-  else:
-    print("that is not a valid input!")
+    else:
+    print("that is not a valid input!"
