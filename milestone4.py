@@ -10,7 +10,6 @@ class Hangman:
         self.num_letters = len(self.word)
         self.num_lives = num_lives
         self.list_of_guesses = []
-        self.word_list = word_list
      
     def check_guess(self, guess):
         if guess in self.word:
@@ -22,7 +21,6 @@ class Hangman:
             self.num_lives -= 1
             print(f"Sorry, {guess} is not in the word. Try again.")
             print(f"You have {self.num_lives} left!")
-        ###return len(self.num_letters) - 1
 
     def ask_for_input(self):
         while self.num_lives > 0 and "_" in self.letter_guessed:
